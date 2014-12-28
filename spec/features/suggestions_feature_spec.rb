@@ -6,7 +6,7 @@ feature 'suggestions' do
     
     scenario 'should display a prompt to add a suggestion' do
       visit '/suggestions'
-      expect(page).to have_content 'No suggestions'
+      expect(page).to have_content 'Be the first to make a suggestion'
       expect(page).to have_link 'Add a suggestion'
     end
 
