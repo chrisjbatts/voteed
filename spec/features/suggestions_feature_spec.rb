@@ -14,8 +14,8 @@ feature 'suggestions' do
 
   context 'Suggestions have been added' do
     before do
-    Suggestion.create(overview: 'Add a dislike button', description: 'I really wish facebook had a dislike button for posts, pictures and videos')
-  end
+      Suggestion.create(overview: 'Add a dislike button', description: 'I really wish facebook had a dislike button for posts, pictures and videos')
+    end
 
     scenario 'display restaurants' do
       save_and_open_page
