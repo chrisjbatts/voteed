@@ -1,2 +1,10 @@
-Be the first to make a suggestion.
-<a href='#'>Add a suggestion</a>
+<% if @suggestions.any? %>
+  <% @suggestions.each do |suggestion| %>
+    <h2> <%= suggestion.overview %> </h2>
+    <h3> <%= suggestion.description %> </h3>
+  <% end %>
+<% else %>
+  No suggestions to display at the moment.
+<% end %>
+
+<a href='#'>Suggest an improvement</a>
